@@ -117,7 +117,7 @@ function purchasePage() {
         productName.innerHTML = newText + "- Gold <br>";
       } else if (hex == "#7E563D") {
         productImg.src = "content/images/watch-caffee.png";
-        productName.innerHTML = newText + "- Coffe <br>";
+        productName.innerHTML = newText + "- Coffee <br>";
       }
     } else if (productData[4] == '"crysta"') {
       if (hex == "#141C1E") {
