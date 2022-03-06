@@ -215,7 +215,7 @@
       <div class="container page-container">
         <form class="contact-form__form-container">
           <div class="name input-container">
-            <label for="name-input" class="name-label form-label">name:</label>
+            <label for="name-input" class="name-label form-label"><sup>*</sup>name:</label>
             <input type="text" name="name-input" id="nameInput" class="input-name form-input"
               placeholder="Please enter your name:">
             <div class="name__error-messages">
@@ -225,7 +225,7 @@
             </div>
           </div>
           <div class="email input-container">
-            <label for="email-input" class="email-label form-label">email:</label>
+            <label for="email-input" class="email-label form-label"><sup>*</sup>email:</label>
             <input type="text" name="email-input" id="emailInput" class="input-email form-input"
               placeholder="Please enter your email:">
             <div class="email__error-messages">
@@ -236,7 +236,7 @@
           </div>
           <div class="phone input-container">
             <label for="phone-input" class="phone-label form-label">Phone:</label>
-            <input type="text" name="phone-input" id="phoneInput" class="input-phone form-input"
+            <input type="text" name="phone-input" id="phoneInput" class="input-phone form-input" maxlength="15"
               placeholder="Please enter your phone number:">
             <div class="phone__error-messages">
               <p class="error phone valid icon-valid">this field is ok!</p>
@@ -253,7 +253,7 @@
             </div>
           </div>
           <div class="age input-container">
-            <label for="age-input" class="age-label form-label">Age:</label>
+            <label for="age-input" class="age-label form-label"><sup>*</sup>Age:</label>
             <input type="date" name="age-input" id="ageInput" class="input-age form-input" min="1900-01-01"
               max="2000-01-01">
             <div class="age__error-messages">
@@ -262,7 +262,7 @@
             </div>
           </div>
           <div class="country input-container">
-            <label for="country-input" class="country-label form-label">Country:</label>
+            <label for="country-input" class="country-label form-label"><sup>*</sup>Country:</label>
             <select id="countrySelection" name="country-input" class="input-country form-input"
               onchange="isEgypt(this.value)">
               <option value="Afganistan">Afghanistan</option>
@@ -516,7 +516,7 @@
               <p class="error country valid icon-valid">this field is ok!</p>
             </div>
             <div class="id-input__container">
-              <label for="id-input" class="id-label form-label">ID:</label>
+              <label for="id-input" class="id-label form-label"><sup>*</sup>ID:</label>
               <input name="id-input" class="id-input form-input" placeholder="Please enter your ID" maxlength="14">
               <div class="id__error-messages">
                 <p class="error id required icon-no-email" id="idRequired">this field is required!</p>
@@ -525,7 +525,7 @@
               </div>
             </div>
             <div class="passport-input__container">
-              <label for="passport-input" class="passport-label form-label">Passport:</label>
+              <label for="passport-input" class="passport-label form-label"><sup>*</sup>Passport:</label>
               <input name="passport-input" class="passport-input form-input" placeholder="Please enter your Passport">
               <div class="passport__error-messages">
                 <p class="error passport required icon-no-email" id="passportRequired">this field is required!</p>
@@ -540,11 +540,9 @@
       </div>
     </section>
     <section class="success-section">
-      <div class="successful-img__container container page-container">
-        <img src="content/images/success.png" alt="success" class="successful-img">
-      </div>
       <div class="successful-header__container">
-        <h2 class="successful-header icon-valid">data sent successfully</h2>
+        <h2 class="successful-header">data sent successfully</h2>
+        <h3 class="successful-header valid icon-valid"></h3>
       </div>
     </section>
     <footer class="footer">

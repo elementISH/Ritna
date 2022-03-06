@@ -2,7 +2,7 @@
 .contact-page {
   .contact-form {
     background-color: $backgroundColor;
-    padding: 60px 375px 60px;
+    padding: 60px 175px 60px;
     .page-header {
       @include generic__header;
       text-align: center;
@@ -47,18 +47,14 @@
   .success-section {
     display: none;
     background-color: $backgroundColor;
-    padding: 60px 375px 60px;
-    .successful-img__container {
-      width: fit-content;
-      .successful-img {
-        margin: 0 auto;
-      }
-    }
-    .successful-header {
-      @include generic__header;
-      width: fit-content;
-      margin: 0 auto;
-      padding-top: 50px;
-    }
+    padding: 0px 0px 55px;
+  }
+  .successful-header {
+    @include generic__header;
+    width: fit-content;
+    margin: 0 auto;
+    padding-top: 50px;
+    text-align: center;
+    font-size: 30px;
   }
 }

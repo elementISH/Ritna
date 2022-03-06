@@ -4,6 +4,9 @@ html,
 body {
   overflow-x: hidden;
 }
+#myNavbar {
+  z-index: 1;
+}
 .page-container {
   max-width: 1170px;
 }
@@ -124,7 +127,7 @@ body {
 .pro {
   background-color: #033977 !important;
 }
-.normal {
+.default {
   background-color: $lightBlueColor !important;
 }
 .error {
@@ -136,13 +139,13 @@ body {
   padding-top: 5px;
 }
 .required {
-  color: #dba644;
+  color: #dba644 !important;
 }
 .valid {
-  color: green;
+  color: green !important;
 }
 .invalid {
-  color: red;
+  color: red !important;
 }
 .normal {
   color: $blueColor;
@@ -176,7 +179,10 @@ body {
 
 .watch-card {
   .card {
-    background-color: #326badc9;
+    background-color: $greyColor;
+    .card-divider {
+      border-color: black !important;
+    }
     .card-body__description {
       font-weight: 500;
       font-size: 20px;
@@ -187,7 +193,10 @@ body {
 }
 .glasses-card {
   .card {
-    background-color: #326badc9;
+    background-color: $greyColor;
+    .card-divider {
+      border-color: black !important;
+    }
     .card-body__description {
       font-weight: 500;
       font-size: 20px;
@@ -198,7 +207,10 @@ body {
 }
 .mask-card {
   .card {
-    background-color: #326badc9;
+    background-color: $greyColor;
+    .card-divider {
+      border-color: black !important;
+    }
     .card-body__description {
       font-weight: 500;
       font-size: 20px;
