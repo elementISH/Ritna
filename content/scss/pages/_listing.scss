@@ -1,0 +1,36 @@
+@import "../abstract/variables.scss";
+@import "../components/subscribe.scss";
+.listing-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.listing-banner {
+  padding: 47px 0px 296px;
+  background-color: $backgroundColor;
+  padding-bottom: 10px;
+  .listing-banner__label {
+    margin-bottom: -25px;
+    width: fit-content;
+    margin: 0 auto;
+    .listing-category__label {
+      font-family: Inter;
+      font-size: 16px;
+      font-weight: bold;
+      line-height: 3.75;
+      text-align: $start;
+    }
+  }
+  .listing-banner__header {
+    width: fit-content;
+    margin: 0 auto;
+    .listing-category__header {
+      @include generic__header;
+      margin-bottom: 35px;
+    }
+  }
+}
+
+.listing-card__img {
+  padding-right: 100px;
+}

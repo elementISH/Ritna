@@ -1,0 +1,28 @@
+// components
+
+@import "./abstract/variables.scss";
+@import "./components/generic.scss";
+@import "./components/feature-products.scss";
+@import "./components/search.scss";
+
+// partials/layout
+
+@import "./layout/header.scss";
+
+// main banner of home page
+
+@import "./layout/main-banner.scss";
+
+@import "./layout/footer.scss";
+
+// pages
+
+@import "pages/home.scss";
+@import "pages/listing.scss";
+@import "pages/pricing.scss";
+@import "pages/purchase.scss";
+@import "pages/contact.scss";
+
+// responsive style
+
+@import "abstract/responsive.scss";

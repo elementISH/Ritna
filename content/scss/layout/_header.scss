@@ -1,0 +1,61 @@
+@import "../abstract/variables.scss";
+
+// header top section
+.header {
+  .header-top {
+    background-color: $yellowColor;
+    padding: 14px 0 14px 0;
+    .header__container {
+      .header__content {
+        .header__left-section {
+          .header__email {
+            margin-left: 55px;
+          }
+        }
+      }
+    }
+  }
+  .header-bottom {
+    background-color: $backgroundColor;
+    height: 100px;
+  }
+}
+
+// header bottom section (navbar)
+.navbar {
+  .navbar__buttons {
+    .sign-up {
+      padding: 11px 30px;
+      font-family: Inter;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 1.31;
+      text-align: center;
+      color: $blueColor;
+    }
+    .search {
+      padding: 9px 13px;
+      border-radius: 4px;
+      border: solid 1px $greyColor;
+      background-color: #fff;
+    }
+  }
+  .navbar__logo {
+    .navbar__logo-brand-name {
+      font-family: Inter;
+      font-size: 24px;
+      font-weight: 800;
+      line-height: 1.33;
+      color: $blueColor;
+    }
+  }
+  .navbar-collapse {
+    .custom-nav-link {
+      font-family: Inter;
+      font-size: 16px;
+      font-weight: bold;
+      line-height: 1.31;
+      color: $blueColor;
+    }
+  }
+}

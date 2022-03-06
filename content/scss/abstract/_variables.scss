@@ -1,0 +1,52 @@
+$yellowColor: #fdc800;
+$blueColor: #002147;
+$backgroundColor: #f0f4f9;
+$greyColor: #bdbdbd;
+$card: 370px;
+$lightBlueColor: #00b2b2;
+
+@font-face {
+  font-family: "inter";
+  src: url("vendors/fonts/Inter/Inter-Regular.eot"),
+    url("vendors/fonts/Inter/Inter-Regular.eot?#iefix")
+      format("embedded-opentype"),
+    url("vendors/fonts/Inter/Inter-Regular.woff2") format("woff2"),
+    url("vendors/fonts/Inter/Inter-Regular.woff") format("woff"),
+    url("vendors/fonts/Inter/Inter-Regular.ttf") format("truetype"),
+    url("vendors/fonts/Inter/Inter-Regular.svg") format("svg");
+  /* Legacy iOS */
+}
+
+@mixin generic__header {
+  font-family: Georgia;
+  font-size: 48px;
+  font-weight: bold;
+  line-height: 1.25;
+  text-align: $start;
+  color: $blueColor;
+}
+
+@mixin pricing__header {
+  font-family: Georgia;
+  font-size: 55px;
+  font-weight: bold;
+  line-height: 1.67;
+  text-align: $start;
+  color: $blueColor;
+}
+
+@mixin form__input {
+  border-radius: 20px;
+  border: solid 3px $blueColor;
+  padding: 10px 35px 10px 35px;
+  font-size: 20px;
+  font-family: Inter;
+}
+
+@mixin form__label {
+  display: block;
+  font-size: 20px;
+  font-family: Inter;
+  font-weight: bold;
+  padding-left: 10px;
+}

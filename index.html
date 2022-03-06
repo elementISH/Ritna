@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ritna - Home</title>
+  <link rel="stylesheet" href="content/css/main-ltr.css">
+  <link rel="shortcut icon" href="content/images/logo.png" type="image/x-icon">
+</head>
+
+<body>
+  <div class="home-page">
+    <!-- search input container -->
+
+    <div class="search-input__container" id="search__container">
+      <button class="btn close-button icon-invalid" onclick="closePopup()"></button>
+      <form class="row align-items-center search-form" id="search">
+        <label for="search" class="search-label decorated-text">Search</label>
+        <div class="col">
+          <input class="form-control search-input" placeholder="Enter a keyword to search">
+        </div>
+
+        <div class="listing-card mt-3 watch-card">
+          <div class="card">
+            <img class="card-img" src="content/images/watch.png" height="230">
+            <div class="card-divider" style="width: 90%; margin: 0 auto;"></div>
+            <div class="card-body">
+              <p class="card-body__description text-center">Tresta</p>
+              <div class="btn purchase-btn w-100 search__purchase-btn" onclick="purchase(this)"
+                data-img="content/images/watch.png" data-name="Tresta - Black" data-colors="bbmb" data-type="normal"
+                data-product-name="tresta">Purchase now</div>
+            </div>
+          </div>
+        </div>
+        <div class="listing-card mt-3 glasses-card">
+          <div class="card">
+            <img class="card-img" src="content/images/glasses.png" height="230">
+            <div class="card-divider" style="width: 90%; margin: 0 auto;"></div>
+            <div class="card-body">
+              <p class="card-body__description text-center">Crysta</p>
+              <div class="btn purchase-btn w-100 search__purchase-btn" onclick="purchase(this)"
+                data-img="content/images/glasses.png" data-name="Crysta - Black" data-colors="bbmb" data-type="normal"
+                data-product-name="crysta">Purchase now</div>
+            </div>
+          </div>
+        </div>
+        <div class="listing-card mt-3 mask-card">
+          <div class="card">
+            <img class="card-img" src="content/images/mask.png" height="230">
+            <div class="card-divider" style="width: 90%; margin: 0 auto;"></div>
+            <div class="card-body">
+              <p class="card-body__description text-center">Heldor</p>
+              <div class="btn purchase-btn w-100 search__purchase-btn" onclick="purchase(this)"
+                data-img="content/images/mask.png" data-name="Heldor - Black" data-colors="bgbo" data-type="normal"
+                data-product-name="heldor">Purchase now</div>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <!-- end search input container -->
+    <!-- modals -->
+
+    <!-- account -->
+
+    <div class="modal fade" id="account" data-backdrop="static" data-keyboard="false" tabindex="-1"
+      aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h6 class="modal-title" id="staticBackdropLabel"><b>Sign Up</b></h6>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"
+              style="background: none; border: none" onclick="validateModalClose()">
+              <p aria-hidden="true" class="icon-invalid"></p>
+            </button>
+          </div>
+          <form name="signUp">
+            <div class="modal-body">
+              <small id="emailHelp" class="form-text text-muted">Your information is safe with us.</small><br>
+              <small id="emailHelp" class="form-text text-muted">Already have an account? <a type="button"
+                  class="btn btn-link m-0 p-0" data-toggle="modal" data-target="#logIn" data-dismiss="modal">log
+                  in</a>.</small>
+              <div class="form-group">
+                <label for="email1">Email address</label>
+                <input type="email" class="form-control" id="email1" aria-describedby="emailHelp"
+                  placeholder="Enter email">
+              </div>
+              <div class="form-group">
+                <label for="password1">Password</label>
+                <input type="password" class="form-control" id="password1" placeholder="Password">
+              </div>
+              <div class="form-group">
+                <label for="password1">Confirm Password</label>
+                <input type="password" class="form-control" id="password2" placeholder="Confirm Password">
+              </div>
+            </div>
+            <div class="modal-footer border-top-0 d-flex justify-content-center">
+              <button type="button" class="btn btn-success signUp-submit" data-dismiss="modal"
+                onclick="validateModalClose()">Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- logIn -->
+
+    <div class="modal fade" id="logIn" data-backdrop="static" data-keyboard="false" tabindex="-1"
+      aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h6 class="modal-title" id="staticBackdropLabel"><b>Log In</b></h6>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"
+              style="background: none; border: none" onclick="validateModalClose()">
+              <p aria-hidden="true" class="icon-invalid"></p>
+            </button>
+          </div>
+          <form name="login">
+            <div class="modal-body">
+              <small id="emailHelp" class="form-text text-muted">Your information is safe with us.</small><br>
+              <small id="emailHelp" class="form-text text-muted">Don't have an account? <a type="button"
+                  class="btn btn-link m-0 p-0" data-toggle="modal" data-target="#account" data-dismiss="modal">sign
+                  up</a>.</small>
+              <div class="form-group">
+                <label for="email1">Email address</label>
+                <input type="email" class="form-control" id="email3" aria-describedby="emailHelp"
+                  placeholder="Enter email">
+              </div>
+              <div class="form-group">
+                <label for="password1">Password</label>
+                <input type="password" class="form-control" id="password3" placeholder="Password">
+              </div>
+            </div>
+            <div class="modal-footer border-top-0 d-flex justify-content-center">
+              <button type="button" class="btn btn-success logIn-submit" data-dismiss="modal"
+                onclick="validateModalClose()">Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- end modals -->
+    <header class="header">
+      <div class="header-top">
+        <div class="container page-container header__container">
+          <section class="header__content d-flex justify-content-between">
+            <section class="header__left-section">
+              <span class="icon-location header__location header__left-section-icon"></span><span
+                class="location-content header__content">1600 Amphitheatre Parkway, CA 94043</span>
+              <span class="icon-email header__email header__left-section-icon"></span><span
+                class="email-content header__content mx-1">ritna@outlook.com</span>
+            </section>
+
+            <section class="header__right-section">
+              <span class="icon-facebook header__facebook"></span>
+              <span class="icon-twitter header__twitter"></span>
+              <span class="icon-instagram header__instagram"></span>
+            </section>
+          </section>
+        </div>
+      </div>
+      <div class="header-bottom">
+        <nav class="navbar navbar-expand-lg navbar-light bg-none container page-container">
+          <div class="d-flex flex-grow-1 navbar__logo">
+            <span class="w-100 d-lg-none d-block"></span>
+            <img src="content/images/logo.png" alt="logo" width="100" height="60">
+            <div class="w-100 text-right">
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            </div>
+          </div>
+          <div class="collapse navbar-collapse flex-grow-1 text-right" id="myNavbar">
+            <ul class="navbar-nav ms-auto flex-nowrap">
+              <li class="nav-item me-5">
+                <a class="nav-link custom-nav-link" href="/">Home</a>
+              </li>
+              <li class="nav-item me-5">
+                <a class="nav-link custom-nav-link" href="/pricing.html">pricing</a>
+              </li>
+              <li class="nav-item me-5">
+                <a class="nav-link custom-nav-link" href="/listing.html">Products</a>
+              </li>
+              <li class="nav-item me-5">
+                <a class="nav-link custom-nav-link" href="/contact.html">Contact</a>
+              </li>
+            </ul>
+            <div class="navbar__buttons ms-3">
+              <button class="btn btn-warning sign-up" data-toggle="modal" data-target="#account"
+                onclick="validateModal()">Sign up</button>
+              <button class="btn btn-danger logOut ms-3">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 512 512"
+                  style="fill: whitesmoke; align-self: center;">
+                  <g id="icomoon-ignore">
+                  </g>
+                  <path
+                    d="M384 320v-64h-160v-64h160v-64l96 96zM352 288v128h-160v96l-192-96v-416h352v160h-32v-128h-256l128 64v288h128v-96z">
+                  </path>
+                </svg>
+              </button>
+              <button class="btn btn-light search icon-search ms-3" id="popupSearch" onclick="popupSearch()"></button>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <div class="sub-header">
+      <div class="container page-container">
+        <div class="row align-items-center sub-header">
+          <div class="col-md-7 col-lg-6 text-md-start text-center sub-header__details mt-1">
+            <h3 class="sub-header__title decorated-text">Become Healthy</h3>
+            <p class="sub-header__content text-center">Let Ritna take care of the tough things</p>
+            <div class="sub-header__buttons">
+              <button class="btn btn-warning sub-header__btn random-product">Random product</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="upcoming-product position-relative">
+      <div class="container page-container position-absolute position start-50 translate-middle">
+        <div class="banner d-lg-flex justify-content-between">
+          <div class="banner__image-container">
+            <img src="content/images/Target.png" width="150" height="150" alt="">
+          </div>
+          <h3 class="upcoming-product__header align-self-center mx-3">Upcoming Product Release! <span
+              class="decorated-text">NIKTAY</span></h3>
+          <div class="countdown align-self-center">
+            <span class="days" id="days">00</span>
+            <span class="colon">:</span>
+            <span class="hours" id="hours">00</span>
+            <span class="colon">:</span>
+            <span class="minutes" id="mins">00</span>
+            <span class="colon">:</span>
+            <span class="seconds" id="seconds">00</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section class="feature-products">
+      <div class="container page-container">
+        <h2 class="feature-products__header mb-3">Top Featured Products</h2>
+        <div class="row d-flex justify-content-between featured__listing-container">
+          <div class="listing-card">
+            <div class="card">
+              <img class="card-img" src="content/images/watch-caffee.png">
+              <div class="card-divider" style="width: 90%; margin: 0 auto;"></div>
+              <div class="card-body">
+                <h3 class="card-body__header card__header text-center">Most Stylish</h3>
+                <p class="card-body__description text-center">Tresta</p>
+                <div class="btn purchase-btn w-100" onclick="purchase(this)" data-img="content/images/watch-caffee.png"
+                  data-name="Tresta - Coffee" data-colors="bgcg" data-type="normal" data-product-name="tresta">Purchase
+                  now</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="listing-card">
+            <div class="card">
+              <img class="card-img" src="content/images/glasses-dark-blue.png">
+              <div class="card-divider" style="width: 90%; margin: 0 auto;"></div>
+              <div class="card-body">
+                <h3 class="card-body__header card__header text-center">Most Fashionable</h3>
+                <p class="card-body__description text-center">Crysta Pro</p>
+                <div class="btn purchase-btn unique-purchase__btn w-100" onclick="purchase(this)"
+                  data-img="content/images/glasses-dark-blue.png" data-name="Crysta - Dark Blue" data-colors="bbmb"
+                  data-type="normal" data-product-name="crysta">Purchase now</div>
+              </div>
+            </div>
+          </div>
+          <div class="listing-card">
+            <div class="card">
+              <img class="card-img" src="content/images/mask.png">
+              <div class="card-divider" style="width: 90%; margin: 0 auto;"></div>
+              <div class="card-body">
+                <h3 class="card-body__header card__header text-center">Most Bracing</h3>
+                <p class="card-body__description text-center">Heldor Pro Max</p>
+                <div class="btn purchase-btn w-100" onclick="purchase(this)" data-img="content/images/mask-oil.png"
+                  data-name="Heldor - Oil" data-colors="bgbo" data-type="normal" data-product-name="heldor">Purchase now
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="customer__feedback">
+      <div class="container page-container">
+        <div class="row h-100">
+          <div class="col-md-12 col-lg-6 h-100" style="position: relative;">
+            <img class="w-100 product__img" src="content/images/watch-soft__green.png" height="440">
+            <div class="card-body px-xl-5 px-md-3 pt-0">
+              <div class="d-flex flex-column align-items-center customer-info">
+                <h3 class="mt-3 mb-0">Kimmie Vo</h3>
+                <p class="text-muted">Top customer 2020-2021</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-12 col-lg-6 h-100 customer__feedback__main-content mt-lg-2 mt-md-5">
+            <h3 class="my-3 customer__feedback__header">Happy Customer <p class="decorated-text">Feedback</p>
+            </h3>
+            <p class="customer__feedback__content">If you are looking for the best choice in the market, look no
+              further. I have tried many other brands before but they are all pale in comparison to Ritna's Tresta. I
+              don't know what they are doing over there at Ritna but it definitely is working because I feel like a new
+              person after getting this watch. It has helped me in many ways by keeping me safe from covid. With this
+              watch there are no more worries, it takes care of everything.</p>
+            <div class="mt-6">
+              <div class="bottom-body">
+                <h3 class="mb-3 bottom-body__header">The product that Kimmie has chosen:</h3>
+                <div class="card-body custom-card">
+                  <div class="row flex-center gx-0">
+                    <div
+                      class="col-lg-4 col-xl-3 text-center text-xl-start bottom-body__image-container image-container mt-2">
+                      <img class="bottom-body__img image" src="content/images/watch-soft__green.png" height="80"
+                        width="80">
+                    </div>
+                    <div class="col-lg-12 col-xl-9 bottom-body__content">
+                      <h3 class="bottom-body__title">Tresta Pro</h3>
+                      <p class="bottom-body__product-details">The most popular</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="stats">
+      <div class="container page-container">
+        <div class="row">
+          <div class="col-sm-6 col-lg-3 text-center mb-5">
+            <img src="content/images/stats-1.png" alt="" class="stats-image">
+            <h3 class="my-2 stats-header increment-numbers">17468</h3>
+            <p class="stats-description">PRODUCTS PUBLISHED</p>
+          </div>
+          <div class="col-sm-6 col-lg-3 text-center mb-5">
+            <img src="content/images/stats-2.png" alt="" class="stats-image">
+            <h3 class="my-2 stats-header increment-numbers">1078</h3>
+            <p class="stats-description">EMPLOYEES EVERY YEAR</p>
+          </div>
+          <div class="col-sm-6 col-lg-3 text-center mb-5">
+            <img src="content/images/stats-3.png" alt="" class="stats-image">
+            <h3 class="my-2 stats-header increment-numbers">8300</h3>
+            <p class="stats-description">HAPPY CUSTOMERS</p>
+          </div>
+          <div class="col-sm-6 col-lg-3 text-center mb-5">
+            <img src="content/images/stats-4.png" alt="" class="stats-image">
+            <h3 class="my-2 stats-header increment-numbers">9873</h3>
+            <p class="stats-description">LIVES SAVED</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="subscribe">
+      <div class="container page-container">
+        <div class="row align-items-center">
+          <div class="col-md-6 col-lg-5 mb-5 subscribe-img__container">
+            <img src="content/images/updates.png" width="280" alt="" class="subscribe-img">
+          </div>
+          <div class="col-md-6 col-lg-5 subscribe__content">
+            <h3 class="decorated-text subscribe-now">Subscribe now</h3>
+            <h1 class="mb-5 get-updates">Get every single update right now! </h1>
+            <label for="validation" class="validation-text"></label>
+            <form class="row g-0 align-items-center subscribe-form icon-email" id="validation">
+              <div class="col">
+                <input class="form-control subscribe-input icon-email" placeholder="Enter email address"
+                  onkeyup="validate('.subscribe-input')">
+              </div>
+              <div class="col-auto">
+                <button class="btn btn-warning subscribe-btn" disabled="disabled">Subscribe now</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container page-container d-sm-flex d-md-flex d-lg-flex justify-content-between">
+        <div class="footer__main">
+          <div class="brand mb-5">
+            <p class="custom-brand-name footer-brand-name ms-2 decorated-text">RITNA</p>
+          </div>
+          <div class="footer__info-content col-5 my-4 mb-5"><span class="icon-location"></span>
+            <p class="ms-4">1500 Treat Ave, Suite 200 San Francisco, CA 94110</p>
+          </div>
+          <div class="footer__info-content my-4 mb-5"><span class="icon-email"></span>
+            <p class="ms-4">ritna@outlook.com</p>
+          </div>
+          <div class="footer__info-content my-4"><span class="icon-phone"></span>
+            <p class="ms-4">1-800-800-2299 (Support)</p>
+          </div>
+        </div>
+        <div class="community mx-2">
+          <h3 class="mb-4 footer-header decorated-text">ABOUT US</h3>
+          <div class="footer__info-content">
+            <p class="about-us__text">
+              Ritna was inspired by this
+              global pandemic [covid].
+              The creators of Ritna are
+              Mostafa, Ismail, Mohammed,
+              Ali and seif. Ritna
+              is made to make your life
+              easier. So take a break
+              and let Ritna take care of
+              your health!
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="bottom-section container page-container">
+        <div class="left-section">
+          <span>Copyright © 2022 Ritna - First class safety</span>
+        </div>
+        <div class="right-section">
+          <span class="icon-facebook footer__facebook"></span>
+          <span class="icon-twitter footer__twitter"></span>
+          <span class="icon-instagram footer__instagram"></span>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="content/scripts/vendors/jquery.min.js"></script>
+  <script src="content/scripts/vendors/bootstrap.js"></script>
+  <script src="content/scripts/pages/home.js"></script>
+  <script src="content/scripts/pages/purchase.js"></script>
+  <script src="content/scripts/_generic.js"></script>
+  <script src="content/scripts/arrays/search_keys/mask.js"></script>
+  <script src="content/scripts/arrays/search_keys/glasses.js"></script>
+  <script src="content/scripts/arrays/search_keys/watch.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,21 @@
+@import "../abstract/variables.scss";
+
+.footer {
+  background-color: $blueColor;
+  padding-top: 77px;
+  border: solid 1px #707070;
+  .footer-brand-name {
+    font-family: Inter;
+    font-size: 23px;
+    font-weight: 800;
+    line-height: 1.35;
+    color: #fff;
+    text-decoration: none;
+  }
+  .bottom-section {
+    background-color: $yellowColor;
+    display: flex;
+    justify-content: space-between;
+    padding: 34px 36px;
+  }
+}

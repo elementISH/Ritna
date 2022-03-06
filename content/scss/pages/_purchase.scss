@@ -1,0 +1,177 @@
+@import "../abstract/variables.scss";
+.purchase-page {
+  .product {
+    background: $backgroundColor;
+    padding: 88px;
+    position: relative;
+    .page-header {
+      @include generic__header;
+      width: fit-content;
+      margin: 0 auto;
+      padding-bottom: 30px;
+      text-align: center;
+    }
+    .purchase-form__container {
+      display: flex;
+      justify-content: center;
+      .product__img {
+        background: #000000e1;
+        border-radius: 50px;
+        width: 100%;
+      }
+      .product-colors {
+        min-width: 400px;
+        position: absolute;
+        left: 20.7%;
+        margin-top: -10%;
+        border-radius: 6px;
+        box-shadow: 0 4px 43px 0 rgba(0, 0, 0, 0.03);
+        background-color: #c1cddb;
+        text-align: center;
+      }
+
+      .product__header {
+        @include generic__header;
+      }
+      .product__content {
+        font-family: Inter;
+        font-size: 16px;
+        line-height: 1.5;
+        text-align: $start;
+        color: #212529;
+      }
+      .bottom-body {
+        margin-top: 50px;
+        .custom-card {
+          padding: 0;
+        }
+        .bottom-body__product-tag {
+          font-family: Inter;
+          font-size: 14px;
+          line-height: 1.71;
+          text-align: $start;
+          color: #757575;
+        }
+        .bottom-body__title {
+          font-family: Inter;
+          font-size: 16px;
+          font-weight: bold;
+          line-height: 1.5;
+          text-align: $start;
+          color: $blueColor;
+        }
+        .bottom-body__header {
+          font-family: Inter;
+          font-size: 16px;
+          font-weight: bold;
+          line-height: 1.5;
+          text-align: $start;
+          color: $blueColor;
+        }
+        .bottom-body__content {
+          padding: 10px 134px 24px 41px;
+          border-radius: 6px;
+          background-color: $backgroundColor;
+          max-height: 97px;
+          margin-#{$start}: 65px;
+        }
+        .bottom-body__image-container {
+          position: absolute;
+          .bottom-body__img {
+            border-radius: 6px;
+            background-color: #a9cedace;
+          }
+        }
+      }
+    }
+  }
+  .purchase__data-form {
+    margin-top: 20%;
+    .purchase__data-form__form-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      width: 680px;
+      .input-container {
+        margin-bottom: 30px;
+        background-color: transparent;
+        border: none;
+      }
+      .form-input {
+        @include form__input;
+      }
+      .form-label {
+        @include form__label;
+      }
+      .input-expire {
+        padding: 10px 35px 10px 83.23px;
+      }
+      .input-country {
+        width: 333px;
+      }
+      .passport-input__container {
+        display: none;
+      }
+      .id-input__container {
+        display: none;
+      }
+    }
+    .form-submit__btn {
+      font-family: Inter;
+      font-size: 25px;
+      font-weight: 500;
+      line-height: 1.31;
+      color: $blueColor;
+    }
+  }
+  .success-section {
+    display: none;
+    background-color: $backgroundColor;
+    padding: 60px 375px 60px;
+    .successful-img__container {
+      width: fit-content;
+      .successful-img {
+        margin: 0 auto;
+      }
+    }
+    .successful-header {
+      @include generic__header;
+      width: fit-content;
+      margin: 0 auto;
+      padding-top: 50px;
+    }
+  }
+  .product__types-dropdown {
+    font-weight: bold;
+    color: $blueColor;
+    text-align: center;
+    background: transparent;
+    border: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    &:focus {
+      outline: 0;
+    }
+    .dropdown-option {
+      color: $blueColor;
+      font-weight: bold;
+      font-size: 20px;
+    }
+  }
+
+  .colors {
+    display: flex;
+    padding-bottom: 20px;
+    justify-content: center;
+  }
+
+  .color {
+    height: 36px;
+    width: 36px;
+    border-radius: 18px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    border: 2px solid #aaa;
+    cursor: pointer;
+  }
+}

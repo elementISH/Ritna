@@ -1,0 +1,64 @@
+@import "../abstract/variables.scss";
+.contact-page {
+  .contact-form {
+    background-color: $backgroundColor;
+    padding: 60px 375px 60px;
+    .page-header {
+      @include generic__header;
+      text-align: center;
+      width: fit-content;
+      margin: 0 auto;
+      padding-bottom: 50px;
+    }
+    .contact-form__form-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      .input-container {
+        margin-bottom: 30px;
+      }
+      .form-input {
+        @include form__input;
+      }
+      .form-label {
+        @include form__label;
+      }
+      .input-age {
+        padding: 5.6px 110px 10px 35px;
+      }
+      .input-country {
+        width: 333px;
+      }
+      .passport-input__container {
+        display: none;
+      }
+      .id-input__container {
+        display: none;
+      }
+    }
+    .form-submit__btn {
+      font-family: Inter;
+      font-size: 25px;
+      font-weight: 500;
+      line-height: 1.31;
+      color: $blueColor;
+    }
+  }
+  .success-section {
+    display: none;
+    background-color: $backgroundColor;
+    padding: 60px 375px 60px;
+    .successful-img__container {
+      width: fit-content;
+      .successful-img {
+        margin: 0 auto;
+      }
+    }
+    .successful-header {
+      @include generic__header;
+      width: fit-content;
+      margin: 0 auto;
+      padding-top: 50px;
+    }
+  }
+}

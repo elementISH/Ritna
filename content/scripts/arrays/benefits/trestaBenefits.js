@@ -1,0 +1,17 @@
+let tresta_benefits = [
+  `<span class="icon-valid included benefits__bullet-point"></span>Access to over 30 apps`,
+  `<span class="icon-valid included benefits__bullet-point"></span>Covid scanner`,
+  `<span class="icon-valid included benefits__bullet-point"></span>Sickness alerts`,
+  `<span class="icon-valid not-included benefits__bullet-point"></span>Sanitizing guns`,
+  `<span class="icon-valid not-included benefits__bullet-point"></span>Mask deployer`,
+  `<span class="icon-valid included benefits__bullet-point"></span>Access to over 30 apps`,
+  `<span class="icon-valid included benefits__bullet-point"></span>Covid scanner`,
+  `<span class="icon-valid included benefits__bullet-point"></span>Sickness alerts`,
+  `<span class="icon-valid included benefits__bullet-point"></span>Sanitizing guns`,
+  `<span class="icon-valid not-included benefits__bullet-point"></span>Mask deployer`,
+  `<span class="icon-valid included benefits__bullet-point"></span>Access to over 30 apps`,
+  `<span class="icon-valid included benefits__bullet-point"></span>Covid scanner`,
+  `<span class="icon-valid included benefits__bullet-point"></span>Sickness alerts`,
+  `<span class="icon-valid included benefits__bullet-point"></span>Sanitizing guns`,
+  `<span class="icon-valid included benefits__bullet-point"></span>Mask deployer`,
+];

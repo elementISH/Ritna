@@ -1,0 +1,42 @@
+@import "../abstract/variables.scss";
+
+.subscribe {
+  padding: 80px;
+  .subscribe__content {
+    .subscribe-now {
+      font-family: Inter;
+      font-size: 16px;
+      font-weight: bold;
+      text-align: $start;
+      line-height: 3.75;
+    }
+    .get-updates {
+      @include generic__header;
+    }
+  }
+}
+.subscribe-form {
+  padding: 8px 12px;
+  border-radius: 5px;
+  border: solid 1px $greyColor;
+  .subscribe-input {
+    border: none;
+    font-family: Inter !important;
+  }
+  .subscribe-input::placeholder {
+    font-family: Inter;
+    line-height: 3.75;
+    color: $greyColor;
+  }
+  .subscribe-btn {
+    padding: 11px 26px;
+    border-radius: 4px;
+    background-color: $yellowColor;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.31;
+    text-align: center;
+    color: $blueColor;
+  }
+}

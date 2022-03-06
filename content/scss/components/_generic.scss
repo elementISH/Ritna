@@ -1,0 +1,209 @@
+@import "../abstract/variables.scss";
+
+html,
+body {
+  overflow-x: hidden;
+}
+.page-container {
+  max-width: 1170px;
+}
+.warning {
+  background-color: $yellowColor;
+}
+.sub-header__btn {
+  padding: 14px 49px;
+  border-radius: 4px;
+}
+.random-product {
+  background-color: $yellowColor;
+  color: $blueColor;
+  border: solid 1px $greyColor;
+}
+.decorated-text {
+  color: $yellowColor !important;
+}
+.image-container {
+  position: relative;
+  &:before {
+    display: block;
+    content: "";
+    width: 100%;
+    padding-top: 100%;
+  }
+  > .image {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+}
+.stats-header {
+  font-family: Georgia;
+  font-size: 60px;
+  font-weight: bold;
+  line-height: 1;
+  text-align: center;
+  color: $blueColor;
+}
+.stats-description {
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1.5;
+  color: #00b2b2;
+}
+.stats-image {
+  width: 200px;
+  height: 200px;
+}
+.footer-header {
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 1.8;
+  color: #fff;
+}
+.footer-content {
+  font-family: Inter;
+  font-size: 16px;
+  line-height: 2.25;
+  color: #fff;
+}
+.footer__info-content {
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.06;
+  color: #fff;
+  display: flex;
+  .footer__info-content__location {
+    width: 600px;
+  }
+  .about-us__text {
+    width: 600px;
+    font-size: 20px;
+  }
+}
+.custom-brand-name {
+  text-transform: uppercase;
+}
+.card__header {
+  text-align: $start;
+}
+.footer-link {
+  text-align: $start;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: Inter;
+}
+.feature-products__header {
+  font-family: Georgia;
+  font-size: 48px;
+  font-weight: bold;
+  line-height: 1.63;
+  text-align: center;
+  color: $blueColor;
+}
+.not-included {
+  color: $greyColor;
+}
+.included {
+  color: $lightBlueColor;
+}
+.benefits__bullet-point {
+  font-size: 25px;
+  padding-right: 20px;
+  vertical-align: middle;
+}
+.unique-purchase__btn {
+  background-color: $yellowColor !important;
+  color: $blueColor !important;
+}
+.pro {
+  background-color: #033977 !important;
+}
+.normal {
+  background-color: $lightBlueColor !important;
+}
+.error {
+  display: none;
+  font-size: 20px;
+  font-family: Inter !important;
+  font-weight: bold;
+  padding-left: 10px;
+  padding-top: 5px;
+}
+.required {
+  color: #dba644;
+}
+.valid {
+  color: green;
+}
+.invalid {
+  color: red;
+}
+.normal {
+  color: $blueColor;
+}
+.card-divider {
+  border: solid 1px $greyColor;
+}
+
+.purchase-btn {
+  padding: 15px 94px 18px;
+  border-radius: 4px;
+  background-color: $blueColor;
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.31;
+  text-align: center;
+  color: #f0f4f9;
+  margin-top: 30px;
+  width: 100%;
+  &:hover {
+    color: white;
+  }
+}
+.pricing-banner__header {
+  .pricing__header {
+    @include generic__header;
+    margin-bottom: 50px;
+  }
+}
+
+.watch-card {
+  .card {
+    background-color: #326badc9;
+    .card-body__description {
+      font-weight: 500;
+      font-size: 20px;
+      font-family: Inter;
+      color: white;
+    }
+  }
+}
+.glasses-card {
+  .card {
+    background-color: #326badc9;
+    .card-body__description {
+      font-weight: 500;
+      font-size: 20px;
+      font-family: Inter;
+      color: white;
+    }
+  }
+}
+.mask-card {
+  .card {
+    background-color: #326badc9;
+    .card-body__description {
+      font-weight: 500;
+      font-size: 20px;
+      font-family: Inter;
+      color: white;
+    }
+  }
+}
