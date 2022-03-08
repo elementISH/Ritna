@@ -204,7 +204,6 @@ if (contactSection != null) {
       }
     }
     if (validInputsLength == formLength) {
-      // ssend mail
       contactSection.style.display = "none";
       successfulSection.style.display = "block";
     }
