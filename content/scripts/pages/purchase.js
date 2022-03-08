@@ -1,10 +1,16 @@
-let productImg;
-let productName;
-let productColor;
-let productType;
-let productOnlyName;
-let modal = document.querySelector(".modalToggler");
-
+let productImg,
+productName,
+productColor,
+productType,
+productOnlyName,
+modal = document.querySelector(".modalToggler"),
+inputName = document.querySelector('input[name="name-input"]'),
+inputEmail = document.querySelector('input[name="email-input"'),
+inputPhone = document.querySelector('input[name="phone-input"'),
+inputCountry = document.querySelector('select[name="country-input'),
+inputExpire = document.querySelector('input[name="expire-input'),
+inputCard = document.querySelector('input[name="card-input"'),
+inputCvv = document.querySelector('input[name="cvv-input"');
 function purchase(product) {
   productImg = product.getAttribute("data-img");
   productName = product.getAttribute("data-name");
@@ -93,8 +99,6 @@ function purchasePage() {
     colorPickers[3].setAttribute("data-hex", "#827B00");
   }
 
-  let overlay = document.querySelector(".product__img");
-
   var el = document.getElementsByClassName("color");
   for (var i = 0; i < el.length; i++) {
     el[i].onclick = changeColor;
@@ -153,13 +157,6 @@ function purchasePage() {
 maxDate();
 
 async function validateData() {
-  let inputName = document.querySelector('input[name="name-input"]'),
-    inputEmail = document.querySelector('input[name="email-input"'),
-    inputPhone = document.querySelector('input[name="phone-input"'),
-    inputCountry = document.querySelector('select[name="country-input'),
-    inputExpire = document.querySelector('input[name="expire-input'),
-    inputCard = document.querySelector('input[name="card-input"'),
-    inputCvv = document.querySelector('input[name="cvv-input"');
   let nameIsValid = false,
     emailIsValid = true,
     phoneIsValid = false,
@@ -254,8 +251,24 @@ async function validateData() {
     expireIsValid === true &&
     cvvIsValid === true
   ) {
-    document.querySelector("section.product").style.display = "none";
-    document.querySelector("section.success-section").style.display = "block";
+    // show delivery
+    let img = document.querySelector(".product__img").src,
+    email = document.querySelector('input[name="email-input"').value,
+    type = document.querySelector(".product__types-dropdown").value,
+    country = document.querySelector('select[name="country-input').value,
+    tag = document.querySelector('.product-tag').value;
+    let msg = `
+        <h1 class="decorated-text"> Dear, ${inputName.value}: </h1>
+        <h3>we have recieved your order and this is a tracking email to verify the order</h3>
+    `;
+    showDelivery("purchase_service", "purchase_template", msg, email, img, tag, type, country).then(
+      function () {
+        document.querySelector("section.product").style.display = "none";
+        document.querySelector("section.success-section").style.display = "block";
+      },
+      function (error) {
+        alert("FAILED...", error);
+      });
   }
 
   inputCountry.style.borderColor = "green";

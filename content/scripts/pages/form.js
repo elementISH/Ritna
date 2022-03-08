@@ -8,7 +8,6 @@ let contactSection = document.querySelector(".contact-form"),
   (dateSelection = document.getElementById("ageInput"));
 
 let inputs = [];
-let formData = [];
 let validInputsLength;
 let formLength;
 
@@ -205,13 +204,9 @@ if (contactSection != null) {
       }
     }
     if (validInputsLength == formLength) {
+      // ssend mail
       contactSection.style.display = "none";
       successfulSection.style.display = "block";
-      for (let data = 0; data < inputs.length; data++) {
-        let dataValues = inputs[data].value;
-        await formData.push(dataValues);
-      }
-      console.log(formData);
     }
   }
 }

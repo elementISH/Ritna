@@ -261,7 +261,7 @@
         <h1 class="page-header">Please Enter Your Information</h1>
         <div class="container page-container purchase-form__container">
           <div>
-            <div class="" style="position: relative;">
+            <div style="position: relative;">
               <img class="product__img" src="content/images/watch.png" height="440">
               <div class="card-body">
                 <div class="product-colors">
@@ -630,11 +630,18 @@
   </div>
   <script src="content/scripts/vendors/jquery.min.js"></script>
   <script src="content/scripts/vendors/bootstrap.js"></script>
+  <script src="content/scripts/vendors/emailjs.js"></script>
   <script src="content/scripts/pages/purchase.js"></script>
   <script src="content/scripts/_generic.js"></script>
   <script src="content/scripts/arrays/search_keys/mask.js"></script>
   <script src="content/scripts/arrays/search_keys/glasses.js"></script>
   <script src="content/scripts/arrays/search_keys/watch.js"></script>
+  <script src="content/scripts/components/sendEmail_delivery.js"></script>
+  <script>
+    (function () {
+  emailjs.init("EGFboxxAKSYVU4zw0");
+})();
+  </script>
 </body>
 
 </html>
