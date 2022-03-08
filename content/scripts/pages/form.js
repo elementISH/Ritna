@@ -1,11 +1,11 @@
 // form validation
 let contactSection = document.querySelector(".contact-form"),
-  successfulSection = document.querySelector(".success-section");
-(submitButton = document.querySelector(".form-submit__btn")),
-  (IDInput = document.querySelector(".id-input__container")),
-  (passportInput = document.querySelector(".passport-input__container")),
-  (countrySelection = document.getElementById("countrySelection")),
-  (dateSelection = document.getElementById("ageInput"));
+  successfulSection = document.querySelector(".success-section"),
+  submitButton = document.querySelector(".form-submit__btn"),
+  IDInput = document.querySelector(".id-input__container"),
+  passportInput = document.querySelector(".passport-input__container"),
+  countrySelection = document.getElementById("countrySelection"),
+  dateSelection = document.getElementById("ageInput");
 
 let inputs = [];
 let validInputsLength;
