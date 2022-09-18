@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta property="og:url" content="https://ritna.thepog.xyz/pricing.html">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Ritna - First Class Safety">
+  <meta property="og:description"
+    content="Ritna was inspired by this global pandemic [covid]. The creators of Ritna are Mostafa, Ismail, Mohammed, Ali and seif. Ritna is made to make your life easier. So take a break and let Ritna take care of your health!">
+  <meta property="og:image" content="/content/images/logo.png">
+  <title>Ritna - Pricing</title>
+  <link rel="stylesheet" href="content/css/main.css">
+  <link rel="shortcut icon" href="content/images/logo.png" type="image/x-icon">
+</head>
+
+<body>
+  <div class="pricing-page">
+    <!-- search input container -->
+
+    <div class="search-input__container" id="search__container">
+      <button class="btn close-button icon-invalid" onclick="closePopup()"></button>
+      <form class="row align-items-center search-form" id="search">
+        <label for="search" class="search-label decorated-text">Search</label>
+        <div class="col">
+          <input class="form-control search-input" placeholder="Enter a keyword to search">
+        </div>
+
+        <div class="listing-card mt-3 watch-card">
+          <div class="card">
+            <img class="card-img" src="content/images/watch.png" height="230">
+            <div class="card-divider" style="width: 90%; margin: 0 auto;"></div>
+            <div class="card-body">
+              <p class="card-body__description text-center">Tresta</p>
+              <div class="btn purchase-btn w-100 search__purchase-btn" onclick="purchase(this)"
+                data-img="content/images/watch.png" data-name="Tresta - Black" data-colors="bbmb" data-type="normal"
+                data-product-name="tresta">Purchase now</div>
+            </div>
+          </div>
+        </div>
+        <div class="listing-card mt-3 glasses-card">
+          <div class="card">
+            <img class="card-img" src="content/images/glasses.png" height="230">
+            <div class="card-divider" style="width: 90%; margin: 0 auto;"></div>
+            <div class="card-body">
+              <p class="card-body__description text-center">Crysta</p>
+              <div class="btn purchase-btn w-100 search__purchase-btn" onclick="purchase(this)"
+                data-img="content/images/glasses.png" data-name="Crysta - Black" data-colors="bbmb" data-type="normal"
+                data-product-name="crysta">Purchase now</div>
+            </div>
+          </div>
+        </div>
+        <div class="listing-card mt-3 mask-card">
+          <div class="card">
+            <img class="card-img" src="content/images/mask.png" height="230">
+            <div class="card-divider" style="width: 90%; margin: 0 auto;"></div>
+            <div class="card-body">
+              <p class="card-body__description text-center">Heldor</p>
+              <div class="btn purchase-btn w-100 search__purchase-btn" onclick="purchase(this)"
+                data-img="content/images/mask.png" data-name="Heldor - Black" data-colors="bgbo" data-type="normal"
+                data-product-name="heldor">Purchase now</div>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <!-- end search input container -->
+    <!-- modals -->
+
+    <!-- account -->
+
+    <div class="modal fade" id="account" data-backdrop="static" data-keyboard="false" tabindex="-1"
+      aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h6 class="modal-title" id="staticBackdropLabel"><b>Sign Up</b></h6>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"
+              style="background: none; border: none" onclick="validateModalClose()">
+              <p aria-hidden="true" class="icon-invalid"></p>
+            </button>
+          </div>
+          <form name="signUp">
+            <div class="modal-body">
+              <small id="emailHelp" class="form-text text-muted">Your information is safe with us.</small><br>
+              <small id="emailHelp" class="form-text text-muted">Already have an account? <a type="button"
+                  class="btn btn-link m-0 p-0" data-toggle="modal" data-target="#logIn" data-dismiss="modal">log
+                  in</a>.</small>
+              <div class="form-group">
+                <label for="email1">Email address</label>
+                <input type="email" class="form-control" id="email1" aria-describedby="emailHelp"
+                  placeholder="Enter email">
+              </div>
+              <div class="form-group">
+                <label for="password1">Password</label>
+                <input type="password" class="form-control" id="password1" placeholder="Password">
+              </div>
+              <div class="form-group">
+                <label for="password1">Confirm Password</label>
+                <input type="password" class="form-control" id="password2" placeholder="Confirm Password">
+              </div>
+            </div>
+            <div class="modal-footer border-top-0 d-flex justify-content-center">
+              <button type="button" class="btn btn-success signUp-submit" data-dismiss="modal"
+                onclick="validateModalClose()">Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- logIn -->
+
+    <div class="modal fade" id="logIn" data-backdrop="static" data-keyboard="false" tabindex="-1"
+      aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h6 class="modal-title" id="staticBackdropLabel"><b>Log In</b></h6>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"
+              style="background: none; border: none" onclick="validateModalClose()">
+              <p aria-hidden="true" class="icon-invalid"></p>
+            </button>
+          </div>
+          <form name="login">
+            <div class="modal-body">
+              <small id="emailHelp" class="form-text text-muted">Your information is safe with us.</small><br>
+              <small id="emailHelp" class="form-text text-muted">Don't have an account? <a type="button"
+                  class="btn btn-link m-0 p-0" data-toggle="modal" data-target="#account" data-dismiss="modal">sign
+                  up</a>.</small>
+              <div class="form-group">
+                <label for="email1">Email address</label>
+                <input type="email" class="form-control" id="email3" aria-describedby="emailHelp"
+                  placeholder="Enter email">
+              </div>
+              <div class="form-group">
+                <label for="password1">Password</label>
+                <input type="password" class="form-control" id="password3" placeholder="Password">
+              </div>
+            </div>
+            <div class="modal-footer border-top-0 d-flex justify-content-center">
+              <button type="button" class="btn btn-success logIn-submit" data-dismiss="modal"
+                onclick="validateModalClose()">Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- end modals -->
+    <header class="header">
+      <div class="header-top">
+        <div class="container page-container header__container">
+          <section class="header__content d-flex justify-content-between">
+            <section class="header__left-section">
+              <span class="icon-location header__location header__left-section-icon"></span><span
+                class="location-content header__content">1600 Amphitheatre Parkway, CA 94043</span>
+              <span class="icon-email header__email header__left-section-icon"></span><span
+                class="email-content header__content mx-1">ritna@outlook.com</span>
+            </section>
+
+            <section class="header__right-section">
+              <span class="icon-facebook header__facebook"></span>
+              <span class="icon-twitter header__twitter"></span>
+              <span class="icon-instagram header__instagram"></span>
+            </section>
+          </section>
+        </div>
+      </div>
+      <div class="header-bottom">
+        <nav class="navbar navbar-expand-lg navbar-light bg-none container page-container">
+          <div class="d-flex flex-grow-1 navbar__logo">
+            <span class="w-100 d-lg-none d-block"></span>
+            <img src="content/images/logo.png" alt="logo" width="100" height="60">
+            <div class="w-100 text-right">
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            </div>
+          </div>
+          <div class="collapse navbar-collapse flex-grow-1 text-right" id="myNavbar">
+            <ul class="navbar-nav ms-auto flex-nowrap">
+              <li class="nav-item me-5">
+                <a class="nav-link custom-nav-link" href="/">Home</a>
+              </li>
+              <li class="nav-item me-5">
+                <a class="nav-link custom-nav-link" href="/pricing.html">pricing</a>
+              </li>
+              <li class="nav-item me-5">
+                <a class="nav-link custom-nav-link" href="/listing.html">Products</a>
+              </li>
+              <li class="nav-item me-5">
+                <a class="nav-link custom-nav-link" href="/contact.html">Contact</a>
+              </li>
+            </ul>
+            <div class="navbar__buttons ms-3">
+              <button class="btn btn-warning sign-up" data-toggle="modal" data-target="#account"
+                onclick="validateModal()">Sign up</button>
+              <button class="btn btn-danger logOut ms-3">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 512 512"
+                  style="fill: whitesmoke; align-self: center;">
+                  <g id="icomoon-ignore">
+                  </g>
+                  <path
+                    d="M384 320v-64h-160v-64h160v-64l96 96zM352 288v128h-160v96l-192-96v-416h352v160h-32v-128h-256l128 64v288h128v-96z">
+                  </path>
+                </svg>
+              </button>
+              <button class="btn btn-light search icon-search ms-3" id="popupSearch" onclick="popupSearch()"></button>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <section class="pricing-banner">
+      <div class="container page-container">
+        <div class="row">
+          <div class="col pricing-banner__header-container">
+            <div class="pricing-banner__label">
+              <h5 class="decorated-text pricing__label">Our prices</h5>
+            </div>
+            <div class="pricing-banner__header">
+              <h3 class="pricing__header">Get a Reasonable price</h3>
+            </div>
+          </div>
+          <div class="toggler-btns">
+            <div class="animation-div"></div>
+            <div class="btn btn__toggle-tresta">Tresta</div>
+            <div class="btn btn__toggle-heldor">Heldor</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="pricing-cards">
+      <div class="container page-container pricing-card__container">
+        <div class="pricing-card">
+          <div class="device-type default">normal</div>
+          <h3 class="card-body__header card__header pricing__header">69.00</h3>
+          <p class="card-body__description pricing__description">best price</p>
+          <div class="card-divider"></div>
+          <div class="benefits-list">
+            <div class="benefits-list__benefit"><span class="icon-valid included benefits__bullet-point"></span>Access
+              to over 30 apps</div>
+            <div class="benefits-list__benefit"><span class="icon-valid included benefits__bullet-point"></span>Covid
+              scanner</div>
+            <div class="benefits-list__benefit"><span class="icon-valid included benefits__bullet-point"></span>Sickness
+              alerts</div>
+            <div class="benefits-list__benefit"><span
+                class="icon-valid not-included benefits__bullet-point"></span>Sanitizing guns</div>
+            <div class="benefits-list__benefit"><span class="icon-valid not-included benefits__bullet-point"></span>Mask
+              storage</div>
+            <div class="btn purchase-btn" onclick="purchase(this)" data-img="content/images/watch.png"
+              data-name="Tresta - Black" data-colors="bgcg" data-type="normal" data-product-name="tresta">Purchase now
+            </div>
+          </div>
+        </div>
+
+        <div class="pricing-card">
+          <div class="device-type pro">pro</div>
+          <h3 class="card-body__header card__header pricing__header">99.00</h3>
+          <p class="card-body__description pricing__description decorated-text">most popular</p>
+          <div class="card-divider"></div>
+          <div class="benefits-list">
+            <div class="benefits-list__benefit"><span class="icon-valid included benefits__bullet-point"></span>Access
+              to over 30 apps</div>
+            <div class="benefits-list__benefit"><span class="icon-valid included benefits__bullet-point"></span>Covid
+              scanner</div>
+            <div class="benefits-list__benefit"><span class="icon-valid included benefits__bullet-point"></span>Sickness
+              alerts</div>
+            <div class="benefits-list__benefit"><span
+                class="icon-valid included benefits__bullet-point"></span>Sanitizing guns</div>
+            <div class="benefits-list__benefit"><span class="icon-valid not-included benefits__bullet-point"></span>Mask
+              storage</div>
+            <div class="btn purchase-btn unique-purchase__btn" onclick="purchase(this)"
+              data-img="content/images/watch.png" data-name="Tresta - Black" data-colors="bgcg" data-type="pro"
+              data-product-name="tresta">Purchase now</div>
+          </div>
+        </div>
+
+        <div class="pricing-card">
+          <div class="device-type pro-max">pro max</div>
+          <h3 class="card-body__header card__header pricing__header">169.00</h3>
+          <p class="card-body__description pricing__description">best version</p>
+          <div class="card-divider"></div>
+          <div class="benefits-list">
+            <div class="benefits-list__benefit"><span class="icon-valid included benefits__bullet-point"></span>Access
+              to over 30 apps</div>
+            <div class="benefits-list__benefit"><span class="icon-valid included benefits__bullet-point"></span>Covid
+              scanner</div>
+            <div class="benefits-list__benefit"><span class="icon-valid included benefits__bullet-point"></span>Sickness
+              alerts</div>
+            <div class="benefits-list__benefit"><span
+                class="icon-valid included benefits__bullet-point"></span>Sanitizing guns</div>
+            <div class="benefits-list__benefit"><span class="icon-valid included benefits__bullet-point"></span>Mask
+              storage</div>
+            <div class="btn purchase-btn" onclick="purchase(this)" data-img="content/images/watch.png"
+              data-name="Tresta - Black" data-colors="bgcg" data-type="pro max" data-product-name="tresta">Purchase now
+            </div>
+          </div>
+        </div>
+        <div class="pricing-banner__header" style="margin: 0 auto;">
+          <h3 class="pricing__header">For more products please go to the <a href="listing.html"
+              style="color: #1d5aa0">Products page</a></h3>
+        </div>
+      </div>
+    </section>
+    <section class="subscribe">
+      <div class="container page-container">
+        <div class="row align-items-center">
+          <div class="col-md-6 col-lg-5 mb-5 subscribe-img__container">
+            <img src="content/images/updates.png" width="280" alt="" class="subscribe-img">
+          </div>
+          <div class="col-md-6 col-lg-5 subscribe__content">
+            <h3 class="decorated-text subscribe-now">Subscribe now</h3>
+            <h1 class="mb-5 get-updates">Get every single update you will get</h1>
+            <label for="validation" class="validation-text"></label>
+            <form class="row g-0 align-items-center subscribe-form icon-email" id="validation">
+              <div class="col">
+                <input class="form-control subscribe-input icon-email" placeholder="Enter email address"
+                  onkeyup="validate('.subscribe-input')">
+              </div>
+              <div class="col-auto">
+                <button class="btn btn-warning subscribe-btn" disabled="disabled">Subscribe now</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container page-container d-sm-flex d-md-flex d-lg-flex justify-content-between">
+        <div class="footer__main">
+          <div class="brand mb-5">
+            <p class="custom-brand-name footer-brand-name ms-2 decorated-text">RITNA</p>
+          </div>
+          <div class="footer__info-content col-5 my-4 mb-5"><span class="icon-location"></span>
+            <p class="ms-4">1500 Treat Ave, Suite 200 San Francisco, CA 94110</p>
+          </div>
+          <div class="footer__info-content my-4 mb-5"><span class="icon-email"></span>
+            <p class="ms-4">ritna@outlook.com</p>
+          </div>
+          <div class="footer__info-content my-4"><span class="icon-phone"></span>
+            <p class="ms-4">1-800-800-2299 (Support)</p>
+          </div>
+        </div>
+        <div class="community mx-2">
+          <h3 class="mb-4 footer-header decorated-text">ABOUT US</h3>
+          <div class="footer__info-content">
+            <p class="about-us__text">
+              Ritna was inspired by this
+              global pandemic [covid].
+              The creators of Ritna are
+              Mostafa, Ismail, Mohammed,
+              Ali, hosam and seif. Ritna
+              is made to make your life
+              easier. So take a break
+              and let Ritna take care of
+              your health!
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="bottom-section container page-container">
+        <div class="left-section">
+          <span>Copyright © 2022 Ritna - First class safety</span>
+        </div>
+        <div class="right-section">
+          <span class="icon-facebook footer__facebook"></span>
+          <span class="icon-twitter footer__twitter"></span>
+          <span class="icon-instagram footer__instagram"></span>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="content/scripts/vendors/jquery.min.js"></script>
+  <script src="content/scripts/vendors/bootstrap.js"></script>
+  <script src="content/scripts/pages/pricing.js"></script>
+  <script src="content/scripts/pages/purchase.js"></script>
+  <script src="content/scripts/_generic.js"></script>
+  <script src="content/scripts/arrays/search_keys/mask.js"></script>
+  <script src="content/scripts/arrays/search_keys/glasses.js"></script>
+  <script src="content/scripts/arrays/search_keys/watch.js"></script>
+  <script src="content/scripts/arrays/benefits/trestaBenefits.js"></script>
+  <script src="content/scripts/arrays/benefits/heldorBenefits.js"></script>
+</body>
+
+</html>

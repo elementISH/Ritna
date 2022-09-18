@@ -1,0 +1,45 @@
+.header .header-top {
+  background-color: var(--yellowColor);
+  padding: 14px 0 14px 0;
+}
+.header
+  .header-top
+  .header__container
+  .header__content
+  .header__left-section
+  .header__email {
+  margin-left: 55px;
+}
+.header .header-bottom {
+  background-color: var(--backgroundColor);
+  height: 100px;
+}
+.navbar .navbar__buttons .sign-up {
+  padding: 11px 30px;
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.31;
+  text-align: center;
+  color: var(--blueColor);
+}
+.navbar .navbar__buttons .search {
+  padding: 9px 13px;
+  border-radius: 4px;
+  border: solid 1px var(--greyColor);
+  background-color: #fff;
+}
+.navbar .navbar__logo .navbar__logo-brand-name {
+  font-family: Inter;
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 1.33;
+  color: var(--blueColor);
+}
+.navbar .navbar-collapse .custom-nav-link {
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1.31;
+  color: var(--blueColor);
+}

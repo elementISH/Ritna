@@ -1,0 +1,19 @@
+:root {
+  --yellowColor: #fdc800;
+  --blueColor: #002147;
+  --backgroundColor: #f0f4f9;
+  --greyColor: #bdbdbd;
+  --card: 370px;
+  --lightBlueColor: #00b2b2;
+}
+
+@font-face {
+  font-family: "inter";
+  src: url("../vendors/fonts/Inter/Inter-Regular.eot"),
+    url("../vendors/fonts/Inter/Inter-Regular.eot?#iefix") format("embedded-opentype"),
+    url("../vendors/fonts/Inter/Inter-Regular.woff2") format("woff2"),
+    url("../vendors/fonts/Inter/Inter-Regular.woff") format("woff"),
+    url("../vendors/fonts/Inter/Inter-Regular.ttf") format("truetype"),
+    url("../vendors/fonts/Inter/Inter-Regular.svg") format("svg");
+  /* Legacy iOS */
+}

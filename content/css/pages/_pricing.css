@@ -1,0 +1,126 @@
+.pricing-banner {
+  padding: 47px 0px 0px;
+  background-color: #f0f4f9;
+}
+.pricing-banner .pricing-banner__label {
+  margin-bottom: -25px;
+}
+.pricing-banner .pricing-banner__label .pricing__label {
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 3.75;
+  text-align: left;
+}
+.pricing-banner .toggler-btns {
+  margin: 0 auto;
+  margin-top: 25px;
+  padding: 4px;
+  border-radius: 6px;
+  background-color: #fff;
+  padding: 10px;
+  width: 280px;
+  height: 100%;
+  position: relative;
+}
+.pricing-banner .toggler-btns .btn__toggle-tresta {
+  padding: 10.3px 28.5px 12.7px;
+  border-radius: 4px;
+  background-color: #00b2b2;
+  font-family: Inter;
+  font-weight: 600;
+  line-height: 1.31;
+  text-align: center;
+  color: #fff;
+  margin-right: 10px;
+}
+.pricing-banner .toggler-btns .btn__toggle-heldor {
+  padding: 10.3px 36.5px 12.7px;
+  border-radius: 4px;
+  background-color: #fff;
+  font-family: Inter;
+  font-weight: 600;
+  line-height: 1.31;
+  text-align: center;
+  color: #002147;
+}
+.pricing-banner .toggler-btns .animation-div {
+  display: none;
+  padding: 10.3px 36.5px 12.7px;
+  border-radius: 4px;
+  background-color: #00b2b2;
+  width: 120px;
+  height: 44px;
+  opacity: 0.5;
+  position: absolute;
+}
+.pricing-cards {
+  background-color: #f0f4f9;
+  padding-bottom: 115px;
+}
+.pricing-cards .pricing-card__container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.pricing-cards .pricing-card__container .pricing-card {
+  height: 100%;
+  margin-bottom: 30px;
+  width: 370px;
+  padding: 0 34.5px 48px 36px;
+  border-radius: 6px;
+  border: solid 1px #bdbdbd;
+  background-color: #fff;
+}
+.pricing-cards .pricing-card__container .pricing-card .pricing__header {
+  font-family: Georgia;
+  font-size: 55px;
+  font-weight: bold;
+  line-height: 1.67;
+  text-align: left;
+  color: #002147;
+}
+.pricing-cards .pricing-card__container .pricing-card .pricing__header::before {
+  content: "$";
+  font-family: Georgia;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 2.5;
+  text-align: left;
+  color: #002147;
+  padding-right: 10px;
+}
+.pricing-cards .pricing-card__container .pricing-card .pricing__description {
+  font-family: Inter;
+  line-height: 3.75;
+  text-align: left;
+  color: #bdbdbd;
+  font-weight: bold;
+  width: fit-content;
+  margin: 0 auto;
+}
+.pricing-cards
+  .pricing-card__container
+  .pricing-card
+  .benefits-list
+  .benefits-list__benefit {
+  font-family: Inter;
+  font-size: 16px;
+  line-height: 3.75;
+  text-align: left;
+  color: #002147;
+}
+.pricing-cards .pricing-card__container .pricing-card .device-type {
+  width: 144px;
+  height: 36px;
+  padding: 7px 26px 8px;
+  background-color: #002147;
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  margin: 0 auto;
+}

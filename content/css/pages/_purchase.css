@@ -1,0 +1,233 @@
+.purchase-page .product {
+  background: #f0f4f9;
+  padding: 88px;
+  position: relative;
+}
+.purchase-page .product .page-header {
+  font-family: Georgia;
+  font-size: 48px;
+  font-weight: bold;
+  line-height: 1.25;
+  text-align: left;
+  color: #002147;
+  width: fit-content;
+  margin: 0 auto;
+  padding-bottom: 30px;
+  text-align: center;
+}
+.purchase-page .product .purchase-form__container {
+  display: flex;
+  justify-content: center;
+}
+.purchase-page .product .purchase-form__container .product__img {
+  background: #000 e1;
+  border-radius: 50px;
+  width: 100%;
+}
+.purchase-page .product .purchase-form__container .product-colors {
+  min-width: 400px;
+  position: absolute;
+  left: 20.7%;
+  margin-top: -10%;
+  border-radius: 6px;
+  box-shadow: 0 4px 43px 0 rgba(0, 0, 0, 0.03);
+  background-color: #c1cddb;
+  text-align: center;
+}
+.purchase-page .product .purchase-form__container .product__header {
+  font-family: Georgia;
+  font-size: 48px;
+  font-weight: bold;
+  line-height: 1.25;
+  text-align: left;
+  color: #002147;
+}
+.purchase-page .product .purchase-form__container .product__content {
+  font-family: Inter;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: left;
+  color: #212529;
+}
+.purchase-page .product .purchase-form__container .bottom-body {
+  margin-top: 50px;
+}
+.purchase-page .product .purchase-form__container .bottom-body .custom-card {
+  padding: 0;
+}
+.purchase-page
+  .product
+  .purchase-form__container
+  .bottom-body
+  .bottom-body__product-tag {
+  font-family: Inter;
+  font-size: 14px;
+  line-height: 1.71;
+  text-align: left;
+  color: #757575;
+}
+.purchase-page
+  .product
+  .purchase-form__container
+  .bottom-body
+  .bottom-body__title {
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1.5;
+  text-align: left;
+  color: #002147;
+}
+.purchase-page
+  .product
+  .purchase-form__container
+  .bottom-body
+  .bottom-body__header {
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1.5;
+  text-align: left;
+  color: #002147;
+}
+.purchase-page
+  .product
+  .purchase-form__container
+  .bottom-body
+  .bottom-body__content {
+  padding: 10px 134px 24px 41px;
+  border-radius: 6px;
+  background-color: #f0f4f9;
+  max-height: 97px;
+  margin-left: 65px;
+}
+.purchase-page
+  .product
+  .purchase-form__container
+  .bottom-body
+  .bottom-body__image-container {
+  position: absolute;
+}
+.purchase-page
+  .product
+  .purchase-form__container
+  .bottom-body
+  .bottom-body__image-container
+  .bottom-body__img {
+  border-radius: 6px;
+  background-color: #a9ceda ce;
+}
+.purchase-page .purchase__data-form {
+  margin-top: 20%;
+}
+.purchase-page .purchase__data-form .purchase__data-form__form-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 680px;
+}
+.purchase-page
+  .purchase__data-form
+  .purchase__data-form__form-container
+  .input-container {
+  margin-bottom: 30px;
+  background-color: transparent;
+  border: none;
+}
+.purchase-page
+  .purchase__data-form
+  .purchase__data-form__form-container
+  .form-input {
+  border-radius: 20px;
+  border: solid 3px #002147;
+  padding: 10px 35px 10px 35px;
+  font-size: 20px;
+  font-family: Inter;
+}
+.purchase-page
+  .purchase__data-form
+  .purchase__data-form__form-container
+  .form-label {
+  display: block;
+  font-size: 20px;
+  font-family: Inter;
+  font-weight: bold;
+  padding-left: 10px;
+}
+.purchase-page
+  .purchase__data-form
+  .purchase__data-form__form-container
+  .input-expire {
+  padding: 10px 35px 10px 83.23px;
+}
+.purchase-page
+  .purchase__data-form
+  .purchase__data-form__form-container
+  .input-country {
+  width: 333px;
+}
+.purchase-page
+  .purchase__data-form
+  .purchase__data-form__form-container
+  .passport-input__container {
+  display: none;
+}
+.purchase-page
+  .purchase__data-form
+  .purchase__data-form__form-container
+  .id-input__container {
+  display: none;
+}
+.purchase-page .purchase__data-form .form-submit__btn {
+  font-family: Inter;
+  font-size: 25px;
+  font-weight: 500;
+  line-height: 1.31;
+  color: #002147;
+}
+.purchase-page .success-section {
+  display: none;
+  background-color: #f0f4f9;
+  padding: 0px 0px 55px;
+}
+.purchase-page .successful-header {
+  font-family: Georgia;
+  font-size: 48px;
+  font-weight: bold;
+  line-height: 1.25;
+  text-align: left;
+  color: #002147;
+  width: fit-content;
+  margin: 0 auto;
+  padding-top: 50px;
+  text-align: center;
+}
+.product__types-dropdown {
+  font-weight: bold;
+  color: #002147;
+  text-align: center;
+  background: transparent;
+  border: none;
+}
+.product__types-dropdown:focus {
+  outline: 0;
+}
+.product__types-dropdown .dropdown-option {
+  color: #002147;
+  font-weight: bold;
+  font-size: 20px;
+}
+.colors {
+  display: flex;
+  padding-bottom: 20px;
+  justify-content: center;
+}
+.color {
+  height: 36px;
+  width: 36px;
+  border-radius: 18px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  border: 2px solid #aaa;
+  cursor: pointer;
+}

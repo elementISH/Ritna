@@ -1,0 +1,30 @@
+.search-input__container {
+  display: none;
+  width: 100%;
+  overflow-x: hidden;
+  position: absolute;
+  z-index: 2;
+  background-color: var(--blueColor);
+}
+
+.search-input__container .search-form {
+  width: 30%;
+  margin: 10% auto;
+}
+
+.search-input__container .search-form .search-label {
+  font-size: 30px;
+}
+
+.search-input__container .search-form .search-input {
+  font-family: Inter;
+}
+
+.search-input__container .search-form .search-btn {
+  font-family: Inter;
+}
+
+.search-input__container .close-button {
+  float: right;
+  color: white;
+}

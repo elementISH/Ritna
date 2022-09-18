@@ -1,0 +1,19 @@
+.footer {
+  background-color: var(--blueColor);
+  padding-top: 77px;
+  border: solid 1px #707070;
+}
+.footer .footer-brand-name {
+  font-family: Inter;
+  font-size: 23px;
+  font-weight: 800;
+  line-height: 1.35;
+  color: #fff;
+  text-decoration: none;
+}
+.footer .bottom-section {
+  background-color: var(--yellowColor);
+  display: flex;
+  justify-content: space-between;
+  padding: 34px 36px;
+}

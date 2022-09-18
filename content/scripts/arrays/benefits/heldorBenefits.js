@@ -1,0 +1,17 @@
+let heldor_benefits = [
+  `<span class="icon-valid included benefits__bullet-point"></span>Heldor AI`,
+  `<span class="icon-valid included benefits__bullet-point"></span>Covid scanner`,
+  `<span class="icon-valid included benefits__bullet-point"></span>Voice enhancer`,
+  `<span class="icon-valid included benefits__bullet-point"></span>Sanitizing guns`,
+  `<span class="icon-valid not-included benefits__bullet-point"></span>Mask deployment capable`,
+  `<span class="icon-valid included benefits__bullet-point"></span>Heldor AI`,
+  `<span class="icon-valid included benefits__bullet-point"></span>Covid scanner`,
+  `<span class="icon-valid included benefits__bullet-point"></span>Voice enhancer`,
+  `<span class="icon-valid included benefits__bullet-point"></span>Sanitizing guns`,
+  `<span class="icon-valid not-included benefits__bullet-point"></span>Mask deployment capable`,
+  `<span class="icon-valid included benefits__bullet-point"></span>Heldor AI`,
+  `<span class="icon-valid included benefits__bullet-point"></span>Covid scanner`,
+  `<span class="icon-valid included benefits__bullet-point"></span>Voice enhancer`,
+  `<span class="icon-valid included benefits__bullet-point"></span>Sanitizing guns`,
+  `<span class="icon-valid included benefits__bullet-point"></span>Mask deployment capable`,
+];

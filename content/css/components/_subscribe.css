@@ -1,0 +1,43 @@
+.subscribe {
+  padding: 80px;
+}
+.subscribe .subscribe__content .subscribe-now {
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: left;
+  line-height: 3.75;
+}
+.subscribe .subscribe__content .get-updates {
+  font-family: Georgia;
+  font-size: 48px;
+  font-weight: bold;
+  line-height: 1.25;
+  text-align: left;
+  color: var(--blueColor);
+}
+.subscribe-form {
+  padding: 8px 12px;
+  border-radius: 5px;
+  border: solid 1px var(--greyColor);
+}
+.subscribe-form .subscribe-input {
+  border: none;
+  font-family: Inter !important;
+}
+.subscribe-form .subscribe-input::placeholder {
+  font-family: Inter;
+  line-height: 3.75;
+  color: var(--greyColor);
+}
+.subscribe-form .subscribe-btn {
+  padding: 11px 26px;
+  border-radius: 4px;
+  background-color: var(--yellowColor);
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.31;
+  text-align: center;
+  color: var(--blueColor);
+}

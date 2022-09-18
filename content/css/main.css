@@ -1,0 +1,35 @@
+/* vendors */
+
+
+@import "./vendors/icomoon/style.css";
+@import "./vendors/bootstrap.min.css";
+
+/* components */
+
+@import "./abstract/_variables.css";
+@import "./components/_generic.css";
+@import "./components/_feature-products.css";
+@import "./components/_search.css";
+@import "./components/_subscribe.css";
+@import "./components/_upcoming-product-banner.css";
+
+/* partials/layout */
+
+@import "./layout/_header.css";
+
+/* main banner of home page */
+
+@import "./layout/_main-banner.css";
+@import "./layout/_footer.css";
+
+/* pages */
+
+@import "./pages/_home.css";
+@import "./pages/_listing.css";
+@import "./pages/_pricing.css";
+@import "./pages/_purchase.css";
+@import "./pages/_contact.css";
+
+/* responsive style */
+
+@import "abstract/_responsive.css";

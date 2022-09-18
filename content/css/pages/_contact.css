@@ -1,0 +1,78 @@
+.contact-page .contact-form {
+  background-color: #f0f4f9;
+  padding: 60px 175px 60px;
+}
+.contact-page .contact-form .page-header {
+  font-family: Georgia;
+  font-size: 48px;
+  font-weight: bold;
+  line-height: 1.25;
+  text-align: left;
+  color: #002147;
+  text-align: center;
+  width: fit-content;
+  margin: 0 auto;
+  padding-bottom: 50px;
+}
+.contact-page .contact-form .contact-form__form-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.contact-page .contact-form .contact-form__form-container .input-container {
+  margin-bottom: 30px;
+}
+.contact-page .contact-form .contact-form__form-container .form-input {
+  border-radius: 20px;
+  border: solid 3px #002147;
+  padding: 10px 35px 10px 35px;
+  font-size: 20px;
+  font-family: Inter;
+}
+.contact-page .contact-form .contact-form__form-container .form-label {
+  display: block;
+  font-size: 20px;
+  font-family: Inter;
+  font-weight: bold;
+  padding-left: 10px;
+}
+.contact-page .contact-form .contact-form__form-container .input-age {
+  padding: 5.6px 110px 10px 35px;
+}
+.contact-page .contact-form .contact-form__form-container .input-country {
+  width: 333px;
+}
+.contact-page
+  .contact-form
+  .contact-form__form-container
+  .passport-input__container {
+  display: none;
+}
+.contact-page .contact-form .contact-form__form-container .id-input__container {
+  display: none;
+}
+.contact-page .contact-form .form-submit__btn {
+  font-family: Inter;
+  font-size: 25px;
+  font-weight: 500;
+  line-height: 1.31;
+  color: #002147;
+}
+.contact-page .success-section {
+  display: none;
+  background-color: #f0f4f9;
+  padding: 0px 0px 55px;
+}
+.contact-page .successful-header {
+  font-family: Georgia;
+  font-size: 48px;
+  font-weight: bold;
+  line-height: 1.25;
+  text-align: left;
+  color: #002147;
+  width: fit-content;
+  margin: 0 auto;
+  padding-top: 50px;
+  text-align: center;
+  font-size: 30px;
+}
